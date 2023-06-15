@@ -1,0 +1,9 @@
+{
+  "name": "module-b",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.0.14",
+    "typescript": "^4.9.4"
+  }
+}
