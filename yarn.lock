@@ -3896,6 +3896,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"components@workspace:*, components@workspace:packages/components":
+  version: 0.0.0-use.local
+  resolution: "components@workspace:packages/components"
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@types/react": ~18.0.14
+    react-native: 0.71.8
+    typescript: ^4.9.4
+  languageName: unknown
+  linkType: soft
+
 "compressible@npm:~2.0.16":
   version: 2.0.18
   resolution: "compressible@npm:2.0.18"
@@ -6424,11 +6435,11 @@ __metadata:
     "@gabrielyotoo/react-use-timer": ^2.0.1
     "@react-navigation/native": ^6.1.6
     "@types/react": ~18.0.14
+    components: "workspace:*"
     expo: ~48.0.18
     expo-dev-client: ~2.2.1
     expo-splash-screen: ~0.18.2
     expo-status-bar: ~1.4.4
-    module-a: ^1.0.0
     module-b: ^1.0.0
     react: 18.2.0
     react-native: 0.71.8
@@ -7244,16 +7255,6 @@ __metadata:
   checksum: a96865108c6c3b1b8e1d5e9f11843de1e077e57737602de1b82030815f311be11f96f09cce59bd5b903d0b29834733e5313f9301e3ed6d6f6fba2eae0df4298f
   languageName: node
   linkType: hard
-
-"module-a@^1.0.0, module-a@workspace:packages/module-a":
-  version: 0.0.0-use.local
-  resolution: "module-a@workspace:packages/module-a"
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@types/react": ~18.0.14
-    typescript: ^4.9.4
-  languageName: unknown
-  linkType: soft
 
 "module-b@^1.0.0, module-b@workspace:packages/module-b":
   version: 0.0.0-use.local
