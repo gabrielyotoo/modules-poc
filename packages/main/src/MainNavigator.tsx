@@ -1,13 +1,17 @@
-import { View, Text } from "react-native";
 import React from "react";
-import { Input } from "components";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Login, Signup } from "auth";
+import Welcome from "./screens/welcome/welcome";
 
 const MainNavigator = () => {
+  const Stack = createNativeStackNavigator();
+
   return (
-    <View>
-      <Text>MainNavigator</Text>
-      <Input />
-    </View>
+    <Stack.Navigator>
+      <Stack.Screen name="welcome" component={Welcome} />
+      <Stack.Screen name="login" component={Login} />
+      <Stack.Screen name="signup" component={Signup} />
+    </Stack.Navigator>
   );
 };
 
