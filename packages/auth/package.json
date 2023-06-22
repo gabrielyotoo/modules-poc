@@ -1,7 +1,7 @@
 {
   "name": "@modules-poc/auth",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "module": "src/index.ts",
   "scripts": {
     "auth:start": "expo start",
     "auth:android": "expo start --android",
