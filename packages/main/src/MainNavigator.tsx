@@ -1,6 +1,6 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Login, Signup } from "auth";
+import { Login, Signup } from "@modules-poc/auth";
 import Welcome from "./screens/welcome/welcome";
 
 const MainNavigator = () => {

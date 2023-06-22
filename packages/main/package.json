@@ -1,5 +1,5 @@
 {
-  "name": "main",
+  "name": "@modules-poc/main",
   "version": "1.0.0",
   "scripts": {
     "app:start": "expo start --dev-client",
@@ -8,10 +8,10 @@
   },
   "dependencies": {
     "@gabrielyotoo/react-use-timer": "^2.0.1",
+    "@modules-poc/auth": "workspace:*",
+    "@modules-poc/components": "workspace:*",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
-    "auth": "workspace:*",
-    "components": "workspace:*",
     "expo": "~48.0.18",
     "expo-dev-client": "~2.2.1",
     "expo-splash-screen": "~0.18.2",

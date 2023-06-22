@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { Input } from "components";
+import { Input } from "@modules-poc/components";
 
 const Login = () => {
   return (

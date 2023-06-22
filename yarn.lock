@@ -2276,6 +2276,55 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@modules-poc/auth@workspace:*, @modules-poc/auth@workspace:packages/auth":
+  version: 0.0.0-use.local
+  resolution: "@modules-poc/auth@workspace:packages/auth"
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@modules-poc/components": "workspace:*"
+    "@types/react": ~18.0.14
+    expo: ~48.0.18
+    expo-camera: ~13.2.1
+    react: 18.2.0
+    react-native: 0.71.8
+    typescript: ^4.9.4
+  languageName: unknown
+  linkType: soft
+
+"@modules-poc/components@workspace:*, @modules-poc/components@workspace:packages/components":
+  version: 0.0.0-use.local
+  resolution: "@modules-poc/components@workspace:packages/components"
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@types/react": ~18.0.14
+    react-native: 0.71.8
+    typescript: ^4.9.4
+  languageName: unknown
+  linkType: soft
+
+"@modules-poc/main@workspace:packages/main":
+  version: 0.0.0-use.local
+  resolution: "@modules-poc/main@workspace:packages/main"
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@gabrielyotoo/react-use-timer": ^2.0.1
+    "@modules-poc/auth": "workspace:*"
+    "@modules-poc/components": "workspace:*"
+    "@react-navigation/native": ^6.1.6
+    "@react-navigation/native-stack": ^6.9.12
+    "@types/react": ~18.0.14
+    expo: ~48.0.18
+    expo-dev-client: ~2.2.1
+    expo-splash-screen: ~0.18.2
+    expo-status-bar: ~1.4.4
+    react: 18.2.0
+    react-native: 0.71.8
+    react-native-safe-area-context: 4.5.0
+    react-native-screens: ~3.20.0
+    typescript: ^4.9.4
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -3166,21 +3215,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"auth@workspace:*, auth@workspace:packages/auth":
-  version: 0.0.0-use.local
-  resolution: "auth@workspace:packages/auth"
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@types/react": ~18.0.14
-    components: "workspace:*"
-    expo: ~48.0.18
-    expo-camera: ~13.2.1
-    react: 18.2.0
-    react-native: 0.71.8
-    typescript: ^4.9.4
-  languageName: unknown
-  linkType: soft
-
 "babel-core@npm:^7.0.0-bridge.0":
   version: 7.0.0-bridge.0
   resolution: "babel-core@npm:7.0.0-bridge.0"
@@ -3949,17 +3983,6 @@ __metadata:
   checksum: 41a81f87425088c072dc99b7bd06d8c81057047a599955572bfa7f320e1f4d0b38422b2eee922e0ac6e4132376c572673dbf5eb02717898173ec11512bc06b34
   languageName: node
   linkType: hard
-
-"components@workspace:*, components@workspace:packages/components":
-  version: 0.0.0-use.local
-  resolution: "components@workspace:packages/components"
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@types/react": ~18.0.14
-    react-native: 0.71.8
-    typescript: ^4.9.4
-  languageName: unknown
-  linkType: soft
 
 "compressible@npm:~2.0.16":
   version: 2.0.18
@@ -6500,29 +6523,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"main@workspace:packages/main":
-  version: 0.0.0-use.local
-  resolution: "main@workspace:packages/main"
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@gabrielyotoo/react-use-timer": ^2.0.1
-    "@react-navigation/native": ^6.1.6
-    "@react-navigation/native-stack": ^6.9.12
-    "@types/react": ~18.0.14
-    auth: "workspace:*"
-    components: "workspace:*"
-    expo: ~48.0.18
-    expo-dev-client: ~2.2.1
-    expo-splash-screen: ~0.18.2
-    expo-status-bar: ~1.4.4
-    react: 18.2.0
-    react-native: 0.71.8
-    react-native-safe-area-context: 4.5.0
-    react-native-screens: ~3.20.0
-    typescript: ^4.9.4
-  languageName: unknown
-  linkType: soft
-
 "make-dir@npm:^2.0.0, make-dir@npm:^2.1.0":
   version: 2.1.0
   resolution: "make-dir@npm:2.1.0"
@@ -7333,13 +7333,6 @@ __metadata:
 "modules-poc@workspace:.":
   version: 0.0.0-use.local
   resolution: "modules-poc@workspace:."
-  dependencies:
-    "@babel/core": ^7.20.0
-    expo: ~48.0.18
-    expo-splash-screen: ~0.18.2
-    expo-status-bar: ~1.4.4
-    react: 18.2.0
-    react-native: 0.71.8
   languageName: unknown
   linkType: soft
 
