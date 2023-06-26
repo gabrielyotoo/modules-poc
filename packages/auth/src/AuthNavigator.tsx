@@ -7,13 +7,14 @@ export type AuthStackParamList = {
   Signup: undefined;
 };
 
-const AuthProvider = () => {
+const AuthNavigator = () => {
   const Stack = createNativeStackNavigator<AuthStackParamList>();
 
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
+        presentation: "fullScreenModal",
       }}
     >
       <Stack.Screen name="Login" component={Login} />
@@ -22,4 +23,4 @@ const AuthProvider = () => {
   );
 };
 
-export default AuthProvider;
+export default AuthNavigator;
