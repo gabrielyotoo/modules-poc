@@ -1,1 +1,3 @@
-export * from "./screens";
+import AuthNavigator from "./AuthNavigator";
+
+export default AuthNavigator;
