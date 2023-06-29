@@ -1,12 +1,14 @@
 import { View, Text } from "react-native";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Camera, CameraType } from "expo-camera";
 
 const Signup = () => {
   const [permission, requestPermission] = Camera.useCameraPermissions();
   useEffect(() => {
-    requestPermission();
-  }, []);
+    if (!permission?.granted) {
+      requestPermission();
+    }
+  }, [permission?.granted, requestPermission]);
 
   return (
     <View

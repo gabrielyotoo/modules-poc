@@ -1,5 +1,4 @@
 import { View, Button } from "react-native";
-import React from "react";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { MainStackParamList } from "../../MainNavigator";
 import { startLoginFlow } from "@modules-poc/auth";
@@ -9,8 +8,7 @@ type WelcomeProps = NativeStackScreenProps<MainStackParamList, "Welcome">;
 
 const Welcome = ({ navigation }: WelcomeProps) => {
   const handleLogin = async () => {
-    const result = await startLoginFlow(navigationRef);
-    console.log(result);
+    await startLoginFlow(navigationRef);
   };
 
   return (
