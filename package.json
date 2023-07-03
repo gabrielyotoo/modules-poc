@@ -9,11 +9,11 @@
     "lint": "eslint packages/**/*.{ts,tsx}"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
-    "eslint": "latest",
+    "@gabrielyotoo/eslint-config-react-native": "^1.1.1",
+    "eslint": "^8.44.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-react": "latest",
-    "eslint-plugin-react-hooks": "latest"
+    "eslint-plugin-jsdoc": "^46.4.3",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-security": "^1.7.1"
   }
 }
