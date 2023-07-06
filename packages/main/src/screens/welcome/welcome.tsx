@@ -1,14 +1,16 @@
-import { View, Button } from "react-native";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { MainStackParamList } from "../../MainNavigator";
-import { startLoginFlow } from "@modules-poc/auth";
-import { navigationRef } from "../../services/navigation";
+import { useLogin } from '@modules-poc/auth';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { View, Button } from 'react-native';
 
-type WelcomeProps = NativeStackScreenProps<MainStackParamList, "Welcome">;
+import { MainStackParamList } from '../../MainNavigator';
+
+type WelcomeProps = NativeStackScreenProps<MainStackParamList, 'Welcome'>;
 
 const Welcome = ({ navigation }: WelcomeProps) => {
-  const handleLogin = async () => {
-    await startLoginFlow(navigationRef);
+  const { navigate, loginData } = useLogin();
+
+  const handleLogin = () => {
+    navigate();
   };
 
   return (
@@ -17,8 +19,8 @@ const Welcome = ({ navigation }: WelcomeProps) => {
       <Button
         title="Go to Sign up"
         onPress={() =>
-          navigation.navigate("Auth", {
-            screen: "Signup",
+          navigation.navigate('Auth', {
+            screen: 'Signup',
           })
         }
       />

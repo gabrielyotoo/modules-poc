@@ -1,7 +1,11 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Welcome from "./screens/welcome/welcome";
-import AuthNavigator, { AuthStackParamList } from "@modules-poc/auth";
-import { NavigatorScreenParams } from "@react-navigation/native";
+import AuthNavigator, {
+  AuthStackParamList,
+  LoginProvider,
+} from '@modules-poc/auth';
+import { NavigatorScreenParams } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import Welcome from './screens/welcome/welcome';
 
 export type MainStackParamList = {
   Welcome: undefined;
@@ -9,13 +13,15 @@ export type MainStackParamList = {
 };
 
 const MainNavigator = () => {
-  const Stack = createNativeStackNavigator<MainStackParamList>();
+  const MainStack = createNativeStackNavigator<MainStackParamList>();
 
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Welcome" component={Welcome} />
-      <Stack.Screen name="Auth" component={AuthNavigator} />
-    </Stack.Navigator>
+    <LoginProvider>
+      <MainStack.Navigator>
+        <MainStack.Screen name="Welcome" component={Welcome} />
+        <MainStack.Screen name="Auth" component={AuthNavigator} />
+      </MainStack.Navigator>
+    </LoginProvider>
   );
 };
 
