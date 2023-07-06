@@ -1,4 +1,4 @@
-import { TextInput, TextInputProps } from "react-native";
+import { TextInput, TextInputProps } from 'react-native';
 
 const Input = (props: TextInputProps) => <TextInput {...props} />;
 

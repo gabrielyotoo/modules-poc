@@ -1,5 +1,6 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Login, Signup } from "./screens";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { Login, Signup } from './screens';
 
 export type AuthStackParamList = {
   Login: undefined;
@@ -13,7 +14,7 @@ const AuthNavigator = () => {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        presentation: "fullScreenModal",
+        presentation: 'fullScreenModal',
       }}
     >
       <Stack.Screen name="Login" component={Login} />

@@ -1,3 +1,3 @@
-import AuthNavigator from "./AuthNavigator";
+import AuthNavigator from './AuthNavigator';
 
 export default AuthNavigator;

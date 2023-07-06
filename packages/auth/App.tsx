@@ -1,5 +1,5 @@
-import ModuleNavigator from "./src/ModuleNavigator";
+import ModuleNavigator from './src/ModuleNavigator';
 
-export default function App() {
-  return <ModuleNavigator />;
-}
+const App = () => <ModuleNavigator />;
+
+export default App;

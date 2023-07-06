@@ -1,6 +1,7 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Welcome from "./screens/welcome/welcome";
-import AuthNavigator from "./AuthNavigator";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import AuthNavigator from './AuthNavigator';
+import Welcome from './screens/welcome/welcome';
 
 export type ModuleStackParamList = {
   Welcome: undefined;

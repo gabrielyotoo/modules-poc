@@ -1,6 +1,6 @@
-import { View, Text } from "react-native";
-import { useEffect } from "react";
-import { Camera, CameraType } from "expo-camera";
+import { Camera, CameraType } from 'expo-camera';
+import { useEffect } from 'react';
+import { View, Text } from 'react-native';
 
 const Signup = () => {
   const [permission, requestPermission] = Camera.useCameraPermissions();
@@ -12,12 +12,12 @@ const Signup = () => {
 
   return (
     <View
-      style={{ flexDirection: "column", flex: 1, justifyContent: "center" }}
+      style={{ flexDirection: 'column', flex: 1, justifyContent: 'center' }}
     >
       <Text>Sign up</Text>
       <Camera
         type={CameraType.back}
-        style={{ flex: 1, backgroundColor: "red" }}
+        style={{ flex: 1, backgroundColor: 'red' }}
       />
     </View>
   );

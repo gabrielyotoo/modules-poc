@@ -1,19 +1,18 @@
-import { View, Text, Button } from "react-native";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { ModuleStackParamList } from "../../ModuleNavigator";
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { View, Text, Button } from 'react-native';
 
-type WelcomeProps = NativeStackScreenProps<ModuleStackParamList, "Welcome">;
+import { ModuleStackParamList } from '../../ModuleNavigator';
 
-const Welcome = ({ navigation }: WelcomeProps) => {
-  return (
+type WelcomeProps = NativeStackScreenProps<ModuleStackParamList, 'Welcome'>;
+
+const Welcome = ({ navigation }: WelcomeProps) => (
     <View>
       <Text>Welcome to the Auth Module!</Text>
       <Button
         title="Go to the Auth Navigator"
-        onPress={() => navigation.navigate("AuthNavigator")}
+        onPress={() => navigation.navigate('AuthNavigator')}
       />
     </View>
   );
-};
 
 export default Welcome;
