@@ -2,7 +2,7 @@ import { registerRootComponent } from 'expo';
 
 import App from './App';
 import AuthNavigator, { AuthStackParamList } from './src/AuthNavigator';
-import { LoginProvider, useLogin } from './src/lib/loginContext';
+import useLogin from './src/lib/useLogin';
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
 // It also ensures that whether you load the app in Expo Go or in a native build,
@@ -10,4 +10,4 @@ import { LoginProvider, useLogin } from './src/lib/loginContext';
 registerRootComponent(App);
 
 export default AuthNavigator;
-export { AuthStackParamList, useLogin, LoginProvider };
+export { AuthStackParamList, useLogin };
