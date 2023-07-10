@@ -13,7 +13,9 @@ export interface UserData {
   account: string;
 }
 
-export let callback = (userData: UserData, error?: Error) => {};
+export let callback = (userData: UserData, error?: Error) => {
+  console.log(`logged in as ${userData.name}, account: ${userData.account}`);
+};
 
 const useLogin = () => {
   const navigation = useNavigation<AppStackNavigationProp>();
