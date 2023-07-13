@@ -13,7 +13,6 @@ const AuthNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
         presentation: 'fullScreenModal',
       }}
     >

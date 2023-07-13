@@ -20,7 +20,13 @@ const MainNavigator = () => {
       <MainStack.Navigator>
         <MainStack.Screen name="Welcome" component={Welcome} />
         <MainStack.Screen name="Profile" component={Profile} />
-        <MainStack.Screen name="Auth" component={AuthNavigator} />
+        <MainStack.Screen
+          name="Auth"
+          component={AuthNavigator}
+          options={{
+            header: () => null,
+          }}
+        />
       </MainStack.Navigator>
     </UserContextProvider>
   );
